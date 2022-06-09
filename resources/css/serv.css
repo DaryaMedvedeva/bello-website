@@ -1,0 +1,22 @@
+.card-price, .card-body
+{
+    border-radius: 0 0 50px 50px ;
+    border: #333 3px !important;
+    transition: background-color 500ms linear;
+}
+
+.card-header
+{
+    border-radius: 50px;
+    background-color: #ffc7bc;
+    font-weight: 600;
+}
+
+.card:hover, .card-body:hover
+{
+    background-color: #fcded8;
+    transition: background-color 500ms linear;
+}
+
+
+

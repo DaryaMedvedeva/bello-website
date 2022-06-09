@@ -1,0 +1,50 @@
+.w-80
+{
+  width: 80%;
+}
+.w-40
+{
+  width: 40%;
+}
+
+@media (max-width:700px) {
+  .w-40
+{
+  width: 100%;
+}
+.w-50
+{
+  width: 100%;
+}
+}
+
+.text-black
+{
+  color: #000;
+}
+
+.bg-pink
+{
+  background-color: #E06581;
+}
+
+.container-contact {
+  width: 100%;
+  padding: 20%;
+  margin: 50%;
+}
+.inp
+{
+  width: 70%;
+}
+@media (max-width: 1000px) {
+  .inp
+{
+  width: 100%;
+}
+.form-control
+{
+  
+  height: 60px;
+}
+}

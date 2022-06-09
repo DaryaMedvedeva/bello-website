@@ -1,0 +1,91 @@
+.underline
+{
+  text-decoration: underline #d38b7c 7px;
+}
+@media (max-width: 790px)
+{
+  .p-3
+  {
+    padding: 0 !important;
+  }
+  .slider .m-2
+  {
+    margin: 0 !important;
+  }
+}
+
+.w-48{
+  width: 48%;
+}
+.img-photo
+{
+  width: 100%;
+  border-radius: 200px 0 0 200px;
+}
+
+@media (max-width: 992px)
+{
+  .w-48{
+    width: 100%;
+  }
+  .fs-4
+  {
+    font-size: 18px !important;
+  }
+  .py-5
+  {
+    padding: 0 !important;
+  }
+  .my-2
+  {
+    margin: 0 !important;
+  }
+}
+
+.specialist
+{
+  width: 28%;
+  background-color: #fff;
+  border-radius: 40px;
+  margin: 2%;
+  transition: background-color 500ms linear;
+
+}
+
+.sp-im
+{
+  width: 100%;
+  border-radius: 40px;
+}
+
+.aftercard
+{
+  background-color: #fff;
+  border-radius: 0 0 40px 40px;
+  padding:0 15px ;
+  transition: background-color 500ms linear;
+
+}
+
+
+.specialist:hover
+{
+  background-color: #ffbfb3;
+  transition: background-color 500ms linear;
+
+}
+
+.specialist:hover .aftercard
+{
+  background-color: #ffbfb3;
+  transition: background-color 500ms linear;
+
+}
+
+@media (max-width: 790px)
+{
+  .specialist
+  {
+    width: 70%;
+  }
+}
