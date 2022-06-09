@@ -1,0 +1,434 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--<meta content="width=500" name="viewport" id="viewport">-->
+    <meta name="description" content="">
+    <link rel="shortcut icon" href="icon.svg">
+    <title>Bello - косметическая клиника</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link href="resources/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <script src="resources/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/imask"></script>
+    <script src="resources/slick/slick.min.js"></script>
+    <link rel="stylesheet" href="resources/slick/slick.css">
+    <link rel="stylesheet" href="resources/slick/slick-theme.css">
+    <link href="resources/css/all.css" rel="stylesheet">
+    <link href="resources/css/serv.css" rel="stylesheet">
+     <style>
+    </style>
+
+  </head>
+
+  <body class=" montserr">
+    <!--Форма-->
+    <div class="brone-form" style="display:none;" >
+        <div class="form-area">
+          <div class="form-card">
+            <div class=" text-center ">
+              <h2 class="semi-b zap">Запись</h2>
+              <h4 class="semi-b fs-5 p-2">Оставьте Ваши пожелания, и наш менеждер свяжется с Вами.</h4>
+          </div>
+              <div class = "container">
+                  <form id="contact-form">
+                          <div class="form-group">
+                              <label for="form_name">Имя</label>
+                              <input id="form_name" type="text" name="name" class="form-control" placeholder="Имя*" required="required" data-error="Name is required.">
+                          </div>
+                          <div class="form-group">
+                              <label for="form_phone">Номер телефона</label>
+                              <input id="form_phone" type="phone" name="phone" class="form-control" placeholder="Номер телефона*" required="required" data-error="Valid phone is required.">
+                          </div>
+                   <div class="form-group">
+                      <label for="form_need">Услуга</label>
+                          <select id="form_need" name="need" class="form-control" required="required" data-error="Please specify your need.">
+                              <option value="" selected disabled>--Выберите услугу--</option>
+                              <option >Консультация</option>
+                              <option >Уход за лицом</option>
+                              <option >Перманентный макияж</option>
+                              <option >Увеличение губ</option>
+                              <option >Моделирование овала лица</option>
+                              <option >Ботокс</option>
+                          </select>     
+                      </div>
+                          <div class="form-group">
+                              <label for="form_message">Комментарии</label>
+                              <textarea id="form_message" name="message" class="form-control" placeholder="Укажите комментарий." rows="4" required="required" data-error="Please, leave us a message."></textarea>
+                   </div>
+                    <input type="submit" class="btn semi-b p-2" value="Отправить" > 
+                  
+          </form>
+          </div>
+  </div>
+  </div>
+  </div>
+ 
+  <header>
+    <div class="container fs-6">
+      <nav class="navbar navbar-expand-md">
+        <a class="navbar-brand" href="home.html">
+          <img src="resources/img/logo.svg" height="50" alt="image">
+        </a>
+
+        <button class="navbar-toggler menu-btn" type="button" data-toggle="collapse" data-target="#navbarNav1" aria-controls="navbarNav1" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon menu-ic"></span>
+        </button>
+
+        <div class="collapse navbar-collapse semi-b up-case " id="navbarNav1">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="aboutus.html">О нас</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="services.html" id="navbarDropdownMenuLink" >Услуги</a>
+              <div class="dropdown-menu" >
+                <a class="dropdown-item semi-b" href="services.html#consult">Консультация</a>
+                <hr class="mt-0 mb-0">
+                <a class="dropdown-item semi-b" href="services.html#lips">Увеличение губ</a>
+                <hr class="mt-0 mb-0">
+                <a class="dropdown-item semi-b" href="services.html#face">Моделирование овала лица</a>
+                <hr class="mt-0 mb-0">
+                <a class="dropdown-item semi-b" href="services.html#botox">Ботокс</a>
+                <hr class="mt-0 mb-0">
+                <a class="dropdown-item semi-b" href="services.html#facecare">Уход за лицом</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contacts.html">Контакты</a>
+            </li>
+          </ul>
+          <a class="btn fs-6 semi-b text-white" value="true" onclick="openform()">Записаться</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <script>
+    let isopen=false;
+    
+    function openform(){
+      if(!isopen){
+        $(".brone-form").css("display", "block");
+        isopen=true;
+      }
+      else if(isopen){
+        $(".brone-form").css("display", "none");
+        isopen=false;
+      }
+    }
+
+    window.onclick = function(event) {
+				if (!event.target.matches('.form-card')&& (event.target.matches('.form-area') || event.target.matches('.brone-form') || event.target.matches('.brone-form::before'))) {
+					openform();
+				}
+				}
+
+        var phoneMask = IMask(
+  document.getElementById('form_phone'), {
+    mask: '+{375}(00)000-00-00'
+  });
+
+  </script>
+
+<div class="container d-flex flex-wrap align-items-center justify-content-center"> 
+    <span class="mb-4 mt-5">
+        <h1 style="font-family: Corinthia; font-size: 100px;" class="text-center mt-4 mb-1" id="consult">Услуги</h1>
+        <h3 class="text-left mt--1">Консультация</h3>
+        <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+            <div class="col">
+                <div class="card mb-4" style="border-radius: 20px;">
+                  <div class="card-header py-3" style="border-radius: 20px;">
+                    <h4 class="my-0 fw-normal">КОНСУЛЬТАЦИЯ ПО УХОДУ И ЛЕЧЕНИЮ</h4>
+                  </div>
+                  <div class="card-body">
+                    <h1 class="card-title pricing-card-title">0BYN</h1>
+                   <p class="text-left">Приглашаем Вас на бесплатную консультацию к специалисту по уходу за кожей. Если Вы боретесь с проблемами, решения которых не знаете, или не представляете, какое лечение будет для Вас оптимальным, наш косметолог обязательно поможет Вам в этом!
+                </p>
+                <p id>
+                    <strong>Длительность:</strong>
+                    20 минут
+                </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card mb-4" style="border-radius: 20px;">
+                  <div class="card-header py-3" style="border-radius: 20px;">
+                    <h4 class="my-0 fw-normal">ПОДГОТОВКА ИДЕАЛЬНОГО ПЛАНА КРАСОТЫ</h4>
+                  </div>
+                  <div class="card-body">
+                    <h1 class="card-title pricing-card-title">50BYN</h1>
+                   <p class="text-left">Это уникальный рецепт успеха. После подробного интервью, касающегося вашего образа жизни, состава вашей косметики и режима вашей кожи, наш косметолог подготовит план специально для вас. Он будет содержать четко определенные действия, продукты и процедуры, чтобы ваша кожа выглядела так, как будто она изображена на обложке. Если после такой консультации Вы выберете лечение из нашего предложения, мы вычтем из него 50 BYN!
+                </p>
+                <p>
+                    <strong>Длительность:</strong>
+                    1 час
+                </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card mb-4" style="border-radius: 20px;">
+                  <div class="card-header py-3" style="border-radius: 20px;">
+                    <h4 class="my-0 fw-normal">КОНСУЛЬТАЦИЯ ПО ЭСТЕТИЧЕСКОЙ КОСМЕТОЛОГИИ</h4>
+                  </div>
+                  <div class="card-body">
+                    <h1 class="card-title pricing-card-title">0BYN</h1>
+                   <p class="text-left">Вы не уверены, подходят ли вам процедуры, которые Вы планируете проводить? Предыдущий эксперт не помог, и Вы не знаете, можно ли с этим что-то сделать? Вы хотите добиться определенного эффекта, но не знаете, как? Запишитесь на бесплатную консультацию к нашему мастеру по эстетике, и она ответит на все ваши вопросы!
+                </p>
+                <p id="lips">
+                    <strong>Длительность:</strong>
+                    35 минут
+                </p>
+                  </div>
+                </div>
+              </div>
+            
+              </div>
+
+              <h3 class="text-left mt-3 mb-2">Увеличение губ</h3>
+              <p class="text-left mx-5 px-5 fs-4">Препараты с гиалуроновой кислотой работают, восполняя естественные запасы этого вещества в организме. Они препятствуют распаду коллагена и стимулируют выработку нового коллагена.<br> В результате мы можем смоделировать форму губ, увеличить их, и при этом они будут прекрасно увлажнены.
+            </p>
+        <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+            <div class="col">
+                <div class="card mb-4" style="border-radius: 20px;">
+                  <div class="card-header py-3" style="border-radius: 20px;">
+                    <h4 class="my-0 fw-normal">0,5мл</h4>
+                  </div>
+                  <div class="card-body">
+                    <h1 class="card-title pricing-card-title">112BYN</h1>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card mb-4" style="border-radius: 20px;">
+                  <div class="card-header py-3" style="border-radius: 20px;">
+                    <h4 class="my-0 fw-normal">1,0мл</h4>
+                  </div>
+                  <div class="card-body">
+                    <h1 class="card-title pricing-card-title">175BYN</h1>
+                  </div>
+                </div>
+              </div>
+              
+              </div>
+
+              <h3 class="text-left mt-5 mb-2">Моделирование овала лица</h3>
+       
+              <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+            <div class="col">
+                <div class="card mb-4" style="border-radius: 20px;">
+                  <div class="card-header py-3" style="border-radius: 20px;">
+                    <h4 class="my-0 fw-normal">МОДЕЛИРОВАНИЕ ПОДБОРОДКА 1 МЛ</h4>
+                  </div>
+                  <div class="card-body">
+                    <h1 class="card-title pricing-card-title">165BYN</h1>
+                   <p class="text-left">Препарат применяется в зоне подбородка, формируя красивый овал, благодаря чему все лицо кажется более тонким. Эта процедура также распространена среди людей с неправильным прикусом и втянутой челюстью, поскольку дает возможность исправить профиль.
+                </p>
+                <img src="resources/img/price-podb.jpeg" width="100%" style="border-radius: 20px;">
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card mb-4" style="border-radius: 20px;">
+                  <div class="card-header py-3" style="border-radius: 20px;">
+                    <h4 class="my-0 fw-normal">МОДЕЛИРОВАНИЕ НИЖНЕЙ ЧЕЛЮСТИ</h4>
+                  </div>
+                  <div class="card-body">
+                    <h1 class="card-title pricing-card-title">165-215BYN</h1>
+                   <p class="text-left">Красиво оформленная челюсть придаст вашему лицу новый, лучший вид.
+                    Эта процедура также распросранена среди людей с неправильным прикусом и втянутой нижней челюстью, она помогает скрыть неправильные пропорции и улучшить вид профиля.
+                </p>
+                <img src="resources/img/price-nch.jpeg" width="100%" style="border-radius: 20px;">
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card mb-4" style="border-radius: 20px;">
+                  <div class="card-header py-3" style="border-radius: 20px;">
+                    <h4 class="my-0 fw-normal">МОДЕЛИРОВАНИЯ ОВАЛА ЛИЦА</h4>
+                  </div>
+                  <div class="card-body">
+                    <h1 class="card-title pricing-card-title">285BYN</h1>
+                   <p class="text-left">FULL FACE - "эффект стройного лица", идеальный "треугольник молодости" - это наш комплексный подход и работа 3-х разных препаратов на основе ГК с разной плотностью. Мы используем их для коррекции наиболее важных областей:</p>
+                    <ul class="text-left">
+                        <li>скулы</li>
+                        <li>челюсть</li>
+                        <li>подбородок</li>
+                    </ul>
+                    <p class="text-left">Перед лечением обязательна консультация, во время которой мы корректируем лечение в соответствии с индивидуальными потребностями; носогубные складки, нижняя челюсть, щеки, подбородок.
+                </p>
+                <img src="resources/img/fullface.jpeg"  width="100%" style="border-radius: 20px;" id="botox">
+                  </div>
+                </div>
+              </div>
+            
+              </div>
+
+              <h3 class="text-left mt-5 mb-2">Ботокс</h3>
+        <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+            <div class="col">
+                <div class="card mb-4" style="border-radius: 20px;">
+                  <div class="card-header py-3" style="border-radius: 20px;">
+                    <h4 class="my-0 fw-normal">КОРРЕКЦИЯ НОСА</h4>
+                  </div>
+                  <div class="card-body">
+                    <h1 class="card-title pricing-card-title">115BYN</h1>
+                   <p class="text-left">Это альтернатива хирургическому вмешательству, после консультации и квалификации пациента врач вводит ботокс и формирует форму  носа. Это малоинвазивный метод, который позволяет примерно на год придать правильную форму и контур  носу.
+                </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card mb-4" style="border-radius: 20px;">
+                  <div class="card-header py-3" style="border-radius: 20px;">
+                    <h4 class="my-0 fw-normal">FOXY EYES</h4>
+                  </div>
+                  <div class="card-body">
+                    <h1 class="card-title pricing-card-title">112BYN</h1>
+                   <p class="text-left">Foxy eyes – это процедура, о которой вы, возможно, еще не слышали! Он заключается в нанесении небольшого количества ботокса на область гусиных лапок, лба и мышц лошади, благодаря чему глаза становятся слегка «вытянутыми» и приподнятыми бровями, и при этом оптически немного увеличиваются.
+                </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card mb-4" style="border-radius: 20px;">
+                  <div class="card-header py-3" style="border-radius: 20px;">
+                    <h4 class="my-0 fw-normal">2 ЗОНЫ</h4>
+                  </div>
+                  <div class="card-body">
+                    <h1 class="card-title pricing-card-title">264BYN</h1>
+                   <p class="text-left" id="facecare">Ботулинический токсин типа А представляет собой препарат, вводимый инъекционно. В результате это приводит к временному и обратимому торможению, препятствующему сокращению мышц, а следствием этого является мельчание, выравнивание и разглаживание мимических морщин кожи.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            
+              </div>
+              <h3 class="text-left mt-5 mb-2">Уход за лицом</h3>
+              <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+                  <div class="col">
+                      <div class="card mb-4" style="border-radius: 20px;">
+                        <div class="card-header py-3" style="border-radius: 20px;">
+                          <h4 class="my-0 fw-normal">УМЕНЬШЕНИЕ ВОЗРАСТА</h4>
+                        </div>
+                        <div class="card-body">
+                          <h1 class="card-title pricing-card-title">115BYN</h1>
+                         <p class="text-left">PQ Age Evolution – эффектный укрепляющий и лифтинг-пилинг, дающий неземной эффект ревитализации кожи.
+                            Помогает в борьбе со шрамами, прыщами, угрями, морщинами и обесцвечиванием.
+                            Последствия:</p>
+                            <ul>
+                                <li>
+                                    омолаживающий эффект
+                                </li>
+                                <li>
+                                    подтянутая кожа
+                                </li>
+                                <li>
+                                    разглаживание и уменьшение черных точек
+                                </li>
+                            </ul>
+                            явно стянутая кожа
+                            разглаживание и уменьшение черных точек
+                            уменьшение обесцвечивания
+                            Получите «новую кожу», почувствуйте себя красивой.
+                      </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card mb-4" style="border-radius: 20px;">
+                        <div class="card-header py-3" style="border-radius: 20px;">
+                          <h4 class="my-0 fw-normal">ДЕТОКС-ПИЛИНГ</h4>
+                        </div>
+                        <div class="card-body">
+                          <h1 class="card-title pricing-card-title">85BYN</h1>
+                         <p class="text-left">Чрезвычайно эффективное лечение, которое борется с акне и неблагоприятными изменениями кожи, такими как гиперкератоз, гиперпигментация, угри и шрамы от угревой сыпи. Кроме того, это единственная процедура, сочетающая целебные свойства трав с отшелушивающими свойствами салициловой, гликолевой и АНА-кислот. Материалы имеют консистенцию крема, что исключает травмирование кожи. Основным ингредиентом является морская губка, которая растворяется и снабжает кожу множеством минералов.
+                      </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card mb-4" style="border-radius: 20px;">
+                        <div class="card-header py-3" style="border-radius: 20px;">
+                          <h4 class="my-0 fw-normal">ИНДИВИДУАЛЬНОЕ ЛЕЧЕНИЕ</h4>
+                        </div>
+                        <div class="card-body">
+                          <h1 class="card-title pricing-card-title">85-160BYN</h1>
+                         <p class="text-left">Вы не знаете, какое лечение будет лучшим для Вас? Вы читаете все эти описания и у вас уже дымится голова? Наш специалист подготовит лечение, идеально соответствующее
+                          Вашим потребностям!<br> Вы также можете записаться на бесплатную
+                          консультацию и показаться нашему косметологу, и она предоставит Вам весь
+                          спектр возможностей.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  
+                    </div>
+    </span>
+</div>
+
+
+
+
+
+<footer class="bg-13 text-center text-white">
+  <div class="container p-4">
+    <div class="row">
+      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+        <ul class="list-unstyled">
+          <li>
+            <a href="services.html" class="nounder nav-link">Услуги</a>
+          </li>
+          <li>
+            <a href="contacts.html" class="nounder nav-link">Контакты</a>
+          </li>
+        </ul>
+      </div>
+      
+      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">      
+        <ul class="list-unstyled mb-0">
+          <li>
+            <a href="aboutus.html" class="nounder nav-link">О нас</a>
+          </li>
+          <li>
+            <a href="https://rabota.by/employer/5362391?hhtmFrom=vacancy" class="nounder nav-link">Вакансии</a>
+          </li>
+        </ul>
+      </div>
+      
+      
+      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+      </div>
+      
+      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+        <ul class="list-unstyled mb-0">
+          <li>
+            <a href="https://www.instagram.com/estetycznaclinic/" class="nounder nav-link inst">belloclinic</a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/estetycznaclinc/" class="nounder nav-link mb-0 fb">belloclinic</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+    
+      <!-- Copyright -->
+      <div class="text-center p-3" >
+        © 2022 Copyright:
+        <a class="nounder text-white" href="#">Bello clinic</a>
+        (Медведева Д.)
+      </div>
+      <!-- Copyright -->
+</footer>
+<script>
+
+</script>
+
+  </body>
+</html>

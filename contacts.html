@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--<meta content="width=500" name="viewport" id="viewport">-->
+    <meta name="description" content="">
+    <link rel="shortcut icon" href="icon.svg">
+    <title>Bello - косметическая клиника</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link href="resources/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <script src="resources/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link rel="stylesheet" href="resources/css/social.css">
+    <script src="resources/slick/slick.min.js"></script>
+    <link rel="stylesheet" href="resources/slick/slick.css">
+    <link rel="stylesheet" href="resources/slick/slick-theme.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/imask"></script>
+    <link href="resources/css/all.css" rel="stylesheet">
+     <style>
+    </style>
+
+  </head>
+  <body class=" montserr">
+    <!--Форма-->
+    <div class="brone-form" style="display:none;" >
+        <div class="form-area">
+          <div class="form-card">
+            <div class=" text-center ">
+              <h2 class="semi-b zap">Запись</h2>
+              <h4 class="semi-b fs-5 p-2">Оставьте Ваши пожелания, и наш менеждер свяжется с Вами.</h4>
+          </div>
+              <div class = "container">
+                  <form id="contact-form">
+                          <div class="form-group">
+                              <label for="form_name">Имя</label>
+                              <input id="form_name" type="text" name="name" class="form-control" placeholder="Имя*" required="required" data-error="Name is required.">
+                          </div>
+                          <div class="form-group">
+                              <label for="form_phone">Номер телефона</label>
+                              <input id="form_phone" type="phone" name="phone" class="form-control" placeholder="Номер телефона*" required="required" data-error="Valid phone is required.">
+                          </div>
+                   <div class="form-group">
+                      <label for="form_need">Услуга</label>
+                          <select id="form_need" name="need" class="form-control" required="required" data-error="Please specify your need.">
+                              <option value="" selected disabled>--выберите услугу--</option>
+                              <option >Консультация</option>
+                              <option >Уход за лицом</option>
+                              <option >Перманентный макияж</option>
+                              <option >Увеличение губ</option>
+                              <option >Моделирование овала лица</option>
+                              <option >Ботокс</option>
+                          </select>     
+                      </div>
+                          <div class="form-group">
+                              <label for="form_message">Комментарии</label>
+                              <textarea id="form_message" name="message" class="form-control" placeholder="Укажите комментарий." rows="4" required="required" data-error="Please, leave us a message."></textarea>
+                   </div>
+                    <input type="submit" class="btn semi-b p-2" value="Отправить" > 
+                  
+          </form>
+          </div>
+  </div>
+  </div>
+  </div>
+ 
+  <header>
+    <div class="container fs-6">
+      <nav class="navbar navbar-expand-md">
+        <a class="navbar-brand" href="home.html">
+          <img src="resources/img/logo.svg" height="50" alt="image">
+        </a>
+
+        <button class="navbar-toggler menu-btn" type="button" data-toggle="collapse" data-target="#navbarNav1" aria-controls="navbarNav1" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon menu-ic"></span>
+        </button>
+
+        <div class="collapse navbar-collapse semi-b up-case " id="navbarNav1">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="aboutus.html">О нас</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="services.html" id="navbarDropdownMenuLink" >Услуги</a>
+              <div class="dropdown-menu" >
+                <a class="dropdown-item semi-b" href="services.html#consult">Консультация</a>
+                <hr class="mt-0 mb-0">
+                <a class="dropdown-item semi-b" href="services.html#lips">Увеличение губ</a>
+                <hr class="mt-0 mb-0">
+                <a class="dropdown-item semi-b" href="services.html#face">Моделирование овала лица</a>
+                <hr class="mt-0 mb-0">
+                <a class="dropdown-item semi-b" href="services.html#botox">Ботокс</a>
+                <hr class="mt-0 mb-0">
+                <a class="dropdown-item semi-b" href="services.html#facecare">Уход за лицом</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contacts.html">Контакты</a>
+            </li>
+          </ul>
+          <a class="btn fs-6 semi-b text-white" value="true" onclick="openform()">Записаться</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <script>
+    let isopen=false;
+    
+    function openform(){
+      if(!isopen){
+        $(".brone-form").css("display", "block");
+        isopen=true;
+      }
+      else if(isopen){
+        $(".brone-form").css("display", "none");
+        isopen=false;
+      }
+    }
+
+    window.onclick = function(event) {
+				if (!event.target.matches('.form-card')&& (event.target.matches('.form-area') || event.target.matches('.brone-form') || event.target.matches('.brone-form::before'))) {
+					openform();
+				}
+				}
+
+        var phoneMask = IMask(
+  document.getElementById('form_phone'), {
+    mask: '+{375}(00)000-00-00'
+  });
+  </script>
+  <div class="container p-5 after-bordo d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start ">
+    <div class="row mt-5">
+      <div class="col-12 col-md-6 col-lg-5 mt-5">
+        <h2>Вы можете связаться с нами!</h2>
+         <p class="text-h3 mt-3">
+          Мы обязательно ответим Вам в это время:<br>
+          <strong>пн-пт: </strong> 09:00 - 21:00<br>
+          <strong>сб-вс: </strong> 11:00 - 19:00
+        </p>
+
+
+        <p class="text-h3 mt-5">
+          <strong>Эл. почта:</strong> <a href="mailto:bello_beauty@mail.ru">bello_beauty@mail.ru</a>
+        </p>
+        <p class="text-h3">
+          <strong>Телефон:</strong> <a href="tel:+375291595684">+375 (29) 159-56-84</a>
+        </p>
+      </div>
+
+      <div class="col-12 col-md-6 ml-auto pt-5 pt-md-0 mt-5">
+        <form>
+          <h2>Или закажите обратный звонок и мы Вам перезвоним!</h2>
+          <div class="row">
+            <div class="col">
+              <input type="text" class="form-control" placeholder="Имя">
+            </div>
+          </div>
+          <div class="row mt-4">
+            <div class="col">
+              <input type="email" id="c_phone" class="form-control" placeholder="Номер телефона">
+            </div>
+          </div>
+          <div class="row mt-4">
+            <div class="col">
+              <textarea class="form-control" name="message" rows="3" placeholder="Чем мы можем Вам помочь?"></textarea>
+            </div>
+          </div>
+          <div class="row mt-4">
+            <div class="col">
+              <button type="submit" class="btn">Отправить</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid p-0 mt-5">
+    <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2352.741105267826!2d27.522012815858094!3d53.86525148009108!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dbd1af7ac10ac1%3A0xa5dc40b1bd2f4048!2z0JPQtdGA0LzQtdGB!5e0!3m2!1sru!2sby!4v1652980772165!5m2!1sru!2sby" width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+  </div>
+<script>
+          var phoneMask_c = IMask(
+  document.getElementById('c_phone'), {
+    mask: '+{375}(00)000-00-00'
+  });
+</script>
+  
+
+<footer class="bg-13 text-center text-white">
+  <div class="container p-4">
+    <div class="row">
+      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+        <ul class="list-unstyled">
+          <li>
+            <a href="services.html" class="nounder nav-link">Услуги</a>
+          </li>
+          <li>
+            <a href="contacts.html" class="nounder nav-link">Контакты</a>
+          </li>
+        </ul>
+      </div>
+      
+      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">      
+        <ul class="list-unstyled mb-0">
+          <li>
+            <a href="aboutus.html" class="nounder nav-link">О нас</a>
+          </li>
+          <li>
+            <a href="https://rabota.by/employer/5362391?hhtmFrom=vacancy" class="nounder nav-link">Вакансии</a>
+          </li>
+        </ul>
+      </div>
+      
+      
+      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+      </div>
+      
+      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+        <ul class="list-unstyled mb-0">
+          <li>
+            <a href="https://www.instagram.com/estetycznaclinic/" class="nounder nav-link inst">belloclinic</a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/estetycznaclinc/" class="nounder nav-link mb-0 fb">belloclinic</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+    
+      <!-- Copyright -->
+      <div class="text-center p-3" >
+        © 2022 Copyright:
+        <a class="nounder text-white" href="#">Bello clinic</a>
+        (Медведева Д.)
+      </div>
+      <!-- Copyright -->
+</footer>
+<script>
+
+
+</script>
+  </body>
+</html>

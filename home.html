@@ -1,0 +1,359 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--<meta content="width=500" name="viewport" id="viewport">-->
+    <meta name="description" content="">
+    <link rel="shortcut icon" href="icon.svg">
+    <title>Bello - косметическая клиника</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link href="resources/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <script src="resources/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link rel="stylesheet" href="resources/css/social.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/imask"></script>
+    <script src="resources/slick/slick.min.js"></script>
+    <script src="resources/js/home.js"></script>
+    <link rel="stylesheet" href="resources/slick/slick.css">
+    <link rel="stylesheet" href="resources/slick/slick-theme.css">
+    <link href="resources/css/all.css" rel="stylesheet">
+    <link href="resources/css/home.css" rel="stylesheet">
+     <style>
+    </style>
+
+  </head>
+
+  <body class=" montserr">
+    <!--Форма-->
+    <div class="brone-form" style="display:none;" >
+        <div class="form-area">
+          <div class="form-card">
+            <div class=" text-center ">
+              <h2 class="semi-b zap">Запись</h2>
+              <h4 class="semi-b fs-5 p-2">Оставьте Ваши пожелания, и наш менеждер свяжется с Вами.</h4>
+          </div>
+              <div class = "container">
+                  <form id="contact-form">
+                          <div class="form-group">
+                              <label for="form_name">Имя</label>
+                              <input id="form_name" type="text" name="name" class="form-control" placeholder="Имя*" required="required" data-error="Name is required.">
+                          </div>
+                          <div class="form-group">
+                              <label for="form_phone">Номер телефона</label>
+                              <input id="form_phone" type="phone" name="phone" class="form-control" placeholder="Номер телефона*" required="required" data-error="Valid phone is required.">
+                          </div>
+                   <div class="form-group">
+                      <label for="form_need">Услуга</label>
+                          <select id="form_need" name="need" class="form-control" required="required" data-error="Please specify your need.">
+                              <option value="" selected disabled>--выберите услугу--</option>
+                              <option >Консультация</option>
+                              <option >Уход за лицом</option>
+                              <option >Перманентный макияж</option>
+                              <option >Увеличение губ</option>
+                              <option >Моделирование овала лица</option>
+                              <option >Ботокс</option>
+                          </select>     
+                      </div>
+                          <div class="form-group">
+                              <label for="form_message">Комментарии</label>
+                              <textarea id="form_message" name="message" class="form-control" placeholder="Укажите комментарий." rows="4" required="required" data-error="Please, leave us a message."></textarea>
+                   </div>
+                    <input type="submit" class="btn semi-b p-2" value="Отправить" > 
+          </form>
+          </div>
+  </div>
+  </div>
+  </div>
+ 
+  <header>
+    <div class="container fs-6">
+      <nav class="navbar navbar-expand-md">
+        <a class="navbar-brand" href="home.html">
+          <img src="resources/img/logo.svg" height="50" alt="image">
+        </a>
+        <button class="navbar-toggler menu-btn" type="button" data-toggle="collapse" data-target="#navbarNav1" aria-controls="navbarNav1" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon menu-ic"></span>
+        </button>
+        <div class="collapse navbar-collapse semi-b up-case " id="navbarNav1">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="aboutus.html">О нас</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="services.html" id="navbarDropdownMenuLink" >Услуги</a>
+              <div class="dropdown-menu" >
+                <a class="dropdown-item semi-b" href="services.html#consult">Консультация</a>
+                <hr class="mt-0 mb-0">
+                <a class="dropdown-item semi-b" href="services.html#lips">Увеличение губ</a>
+                <hr class="mt-0 mb-0">
+                <a class="dropdown-item semi-b" href="services.html#face">Моделирование овала лица</a>
+                <hr class="mt-0 mb-0">
+                <a class="dropdown-item semi-b" href="services.html#botox">Ботокс</a>
+                <hr class="mt-0 mb-0">
+                <a class="dropdown-item semi-b" href="services.html#facecare">Уход за лицом</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contacts.html">Контакты</a>
+            </li>
+          </ul>
+          <a class="btn  fs-6 semi-b text-white" value="true" onclick="openform()">Записаться</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <script>
+        var phoneMask = IMask(
+  document.getElementById('form_phone'), {
+    mask: '+{375}(00)000-00-00'
+  });
+  </script>
+ <!-- Превью -->
+ <div class="container p-5 after-bordo d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start  mb-5" >
+  <div class="slider autoplay montserr bust-slider  mt-5 mb-3">
+    <div class="p-3 m-2" >
+      <img src="resources/img/bust_sq.png" class="m-2 main-im">
+     </div>
+     <div class="p-3 m-2">
+      <img src="resources/img/bust (1).png"  class="m-2 main-im">
+     </div>
+    <div class="p-3 m-2">
+      <img src="resources/img/bust (2).png" class="m-2 main-im">
+     </div>
+     <div class="p-3 m-2">
+      <img src="resources/img/bust (4).png" class="m-2 main-im">
+     </div>
+  </div>
+  <div class="align-items-center justify-content-center pl-5 prew-text  mt-5 mb-3">
+    <h1 class="mb--2">Красота и молодость</h1>
+    <h1 class="semi-b ">без косметики!</h1>
+    <h4 class="medium mb-5">
+     Продлим молодость.<br>
+     Привьем любовь к себе.<br>
+     Упростим утреннюю рутину.
+    </h4>
+    <a class="mt-5 ms-4 toserv text-right fs-3" href="#services">К услугам</a>
+  </div>
+  </div>
+  <script class="language-javascript">
+$('.autoplay').slick({
+slidesToShow: 1,
+slidesToScroll: 1,
+autoplay: true,
+autoplaySpeed: 4000,
+arrows : false,
+cssEase: 'linear'
+});
+    </script>
+<!--Кретерии-->
+<div class="container mt-5 mb-5">
+  <h1 style="font-family: Corinthia; font-size: 80px;" class="text-left mb-1">Наша общая цель!</h1>
+  <div class="row g-2">
+      <div class="col-md-4">
+          <div class="p-3 px-4">
+              <div class="icon mb-2">
+                <img src="resources/img/skincare.svg">
+              </div>
+              <div class="user-content">
+                  <h4 class="mb-3" style="line-height: 0.9;">Поддержка во время лечения - это основа!</h4>
+                  <p>Наша цель – видимые и ощутимые эффекты, поэтому мы заботимся о наших клиентах и ​​после лечения.</p>
+              </div>
+          </div>
+      </div>
+      <div class="col-md-4">
+          <div class="p-3 px-4">
+            <div class="icon">
+              <img src="resources/img/flower-plant.svg">
+            </div>
+              <div class="user-content">
+                  <h4 class="mb-3" style="line-height: 0.9;">Атмосфера, поддерживающая Вашу красоту!</h4>
+                  <p>С нами вы будете чувствовать себя как дома. За кофе или чаем будет приятно познакомиться с Вами и Вашими ожиданиями.</p>
+              </div>
+          </div>
+      </div>
+      <div class="col-md-4">
+          <div class=" p-3 px-4">
+            <div class="icon">
+              <img src="resources/img/beauty-cream.svg">
+            </div>
+              <div class="user-content">
+                  <h4 class="mb-3" style="line-height: 0.9;">Материалы премиум класса!</h4>
+                  <p>Мы не экономим на качестве материалов, с которыми работаем, поэтому Вам гарантирован результат, а значит и удовлетворение процедурой.</p>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+<!--Услуги-->
+   <div class="container mt-5 align-items-center justify-content-center" id="services">
+    <h1 style="font-family: Corinthia; font-size: 100px;" class="text-center" >Услуги</h1>
+    <div class="container mt--5">
+      <div class="d-flex flex-wrap align-items-center justify-content-center card-area">
+     <div class="card text-white card-has-bg click-col" style="background-image:url('resources/img/consult.jpg');">
+            <div class="card-img-overlay d-flex flex-column" onclick="window.location.href='services.html#consult'">
+             <div class="card-body">
+                <h4 class="card-title mt-0 "><a class="text-white" >Консультация</a></h4>
+              </div>
+            </div>
+            </div>
+      <div class="card text-white card-has-bg click-col" style="background-image:url('resources/img/lips.jpg');">
+            <div class="card-img-overlay d-flex flex-column" onclick="window.location.href='services.html#lips'">
+             <div class="card-body">
+                <h4 class="card-title mt-0 "><a class="text-white">Увеличение губ</a></h4>
+              </div>
+            </div>
+          </div>
+          <div class="card text-white card-has-bg click-col" style="background-image:url('resources/img/face.jpg');">
+            <div class="card-img-overlay d-flex flex-column" onclick="window.location.href='services.html#face">
+             <div class="card-body">
+                <h4 class="card-title mt-0 "><a class="text-white" >Моделирование овала лица</a></h4>
+              </div>
+            </div>
+            </div>
+         <div class="card text-white card-has-bg click-col" style="background-image:url('resources/img/botox.jpg');">
+            <div class="card-img-overlay d-flex flex-column" onclick="window.location.href='services.html#botox'">
+             <div class="card-body">
+                <h4 class="card-title mt-0 "><a class="text-white" >Ботокс</a></h4>
+               </div>
+              </div>
+            </div>
+      <div class="card text-white card-has-bg click-col" style="background-image:url('resources/img/facecare.jpg');">
+            <div class="card-img-overlay d-flex flex-column" onclick="window.location.href='services.html#facecare'">
+             <div class="card-body">
+                <h4 class="card-title mt-0 "><a class="text-white" >Уход за лицом</a></h4>
+              </div>
+            </div>
+          </div>
+</div>
+</div>
+
+  </div>
+<!--Отзывы-->
+  <div class="container p-5 after-bordo" >  
+    <h2 class="text-center my-4"  style="font-family: Corinthia; font-size: 100px;">Отзывы</h2>
+    <div class="slider responsive montserr mt-4">
+      <div class="p-3 m-2 slide-bgc">
+        <div class="d-flex flex-wrap mb-2">
+        <img src="resources/img/vel.png" class="m-2 ot-pic">
+        <div class="mt-2"><h3 class=" fs-4 mt-2 mb--1">Елена</h3>
+        <p class="color-grey fs-6 mt-1">@velena.var</p></div>
+      </div>
+        <p>Была на процедуре игольчатой мезотерапии, все понравилось. Результат на лицо, а персонал очень чуткий и вежливый.</p>
+      </div>
+      <div class="p-3 m-2 slide-bgc">
+        <div class="d-flex flex-wrap mb-2">
+        <img src="resources/img/liz.png" class="m-2 ot-pic">
+        <div class="mt-2"><h3 class=" fs-4 mt-2 mb--1">Елизавета</h3>
+        <p class="color-grey fs-6 mt-1">@dshknch_</p></div>
+      </div>
+        <p>Обращалась за консультацией к специалисту Анне. Проверилитип кожи, подобрали уходовую косметику исходя из моих препочтений. Посоветовали посетить процедуры клиники по уходу за лицом.</p>
+      </div>
+      <div class="p-3 m-2 slide-bgc">
+        <div class="d-flex flex-wrap mb-2">
+        <img src="resources/img/eva.png" class="m-2 ot-pic">
+        <div class="mt-2"><h3 class=" fs-4 mt-2 mb--1">Ева</h3>
+        <p class="color-grey fs-6 mt-1">@evasen</p></div>
+      </div>
+        <p>Делала процедуру коррекции овала лица. Результат приятно порадовал. Выполняла работу специалист Ирина. Все время уточняла мои ощущения. Персонал квалифицирован.</p>
+      </div>
+      <div class="p-3 m-2 slide-bgc">
+        <div class="d-flex flex-wrap mb-2">
+        <img src="resources/img/angelya.png" class="m-2 ot-pic">
+        <div class="mt-2"><h3 class=" fs-4 mt-2 mb--1">Ангелина</h3>
+        <p class="color-grey fs-6 mt-1">@angelya__cool</p></div>
+      </div>
+        <p>Обратилась с необходимостью провести коррекцию ПМ. Специалист провел консультацию, где объяснил мне, как все буде происходить. Сама коррекцию была проведена аккуратно. Стало даже лучше, чем было!!!</p>
+      </div>
+      <div class="p-3 m-2 slide-bgc">
+        <div class="d-flex flex-wrap">
+        <img src="resources/img/ksenia.png" class="m-2 ot-pic">
+        <div class="mt-2"><h3 class=" fs-4 mt-2 mb--1">Ксения</h3>
+        <p class="color-grey fs-6 mt-1">@plyshevaya.ksy</p></div>
+      </div>
+        <p>Мне на консультации подобрали индвивидуальный план ухода за лицом. Посещаю 2 раза в неделю. Учитываются все мои пожелания, лучшая клиника!!</p>
+      </div>
+      <div class="p-3 m-2 slide-bgc">
+        <div class="d-flex flex-wrap">
+        <img src="resources/img/valeria.png" class="m-2 ot-pic">
+        <div class="mt-2"><h3 class=" fs-4 mt-2 mb--1">Валерия</h3>
+        <p class="color-grey fs-6 mt-1">@valeri.hut</p></div>
+      </div>
+        <p>Прошла курс процедур по моделированию овала лица, потому что второй подбородок - моя проблема. Персона отзывчивый. Первый раз было страшно, но не последующие.</p>
+      </div>
+    </div>
+    </div>
+    <script class="language-javascript">
+$('.responsive').slick({
+  dots: true,
+  infinite: true,
+  speed: 300,
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  responsive: [
+    {
+      breakpoint: 992,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1
+      }
+    },
+    {
+      breakpoint: 550,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+  ]
+});
+</script>
+<footer class="bg-13 text-center text-white">
+        <div class="container p-4">
+          <div class="row">
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+              <ul class="list-unstyled">
+                <li>
+                  <a href="services.html" class="nounder nav-link">Услуги</a>
+                </li>
+                <li>
+                  <a href="contacts.html" class="nounder nav-link">Контакты</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">      
+              <ul class="list-unstyled mb-0">
+                <li>
+                  <a href="aboutus.html" class="nounder nav-link">О нас</a>
+                </li>
+                <li>
+                  <a href="https://rabota.by/employer/5362391?hhtmFrom=vacancy" class="nounder nav-link">Вакансии</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+              <ul class="list-unstyled mb-0">
+                <li>
+                  <a href="https://www.instagram.com/estetycznaclinic/" class="nounder nav-link inst">belloclinic</a>
+                </li>
+                <li>
+                  <a href="https://www.facebook.com/estetycznaclinc/" class="nounder nav-link mb-0 fb">belloclinic</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+            <!-- Copyright -->
+            <div class="text-center p-3" >
+              © 2022 Copyright:
+              <a class="nounder text-white" href="#">Bello clinic</a>
+              (Медведева Д.)
+            </div>
+      </footer>
+  </body>
+</html>
